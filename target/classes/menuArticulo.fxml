@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFEACE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VistaGestionArticulo">
+   <children>
+      <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="700.0" spacing="30" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <Label layoutX="114.0" layoutY="30.0" text="GESTIÓN DE ARTÍCULOS">
+         <font>
+            <Font name="Calibri" size="40.0" />
+         </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+      </Label>
+      <Button id="anadirArticulo" layoutX="190.0" layoutY="131.0" mnemonicParsing="false" onAction="#cambiarAnadirArticulo" prefHeight="57.0" prefWidth="220.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Añadir Artículo">
+         <font>
+            <Font size="27.0" />
+         </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+      </Button>
+      <Button id="buscarArticulo" layoutX="190.0" layoutY="212.0" mnemonicParsing="false" onAction="#cambiarMostrarArticulo" prefHeight="57.0" prefWidth="220.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Mostrar Artículo">
+         <font>
+            <Font name="Calibri" size="27.0" />
+         </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+      </Button>
+      <Button id="articuloVolver" layoutX="260.0" layoutY="326.0" mnemonicParsing="false" onAction="#cambiarMenuPrincipal" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Volver">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+      </Button>
+      </VBox>
+   </children>
+</AnchorPane>

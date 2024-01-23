@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFEACE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VistaMenuListarPedidos">
+    <children>
+        <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="700.0" spacing="30" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <Label layoutX="144.0" layoutY="36.0" text="LISTAR PEDIDOS">
+                <font>
+                    <Font name="Calibri" size="40.0" />
+                </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+            </Label>
+
+            <Button id="mostrarPedidoId" layoutX="115.0" layoutY="109.0" mnemonicParsing="false" onAction="#mostrarPedidoId" prefHeight="57.0" prefWidth="350" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Mostrar pedido por ID">
+                <font>
+                    <Font name="Calibri" size="27.0" />
+                </font>
+            </Button>
+
+            <Button id="mostrarPedidoPendiente" layoutX="115.0" layoutY="184.0" mnemonicParsing="false" onAction="#mostrarPedidoPendiente" prefHeight="57.0" prefWidth="350" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Mostrar pedidos pendientes">
+                <font>
+                    <Font name="Calibri" size="27.0" />
+                </font>
+            </Button>
+
+            <Button id="mostrarPedidoEnviado" layoutX="115.0" layoutY="258.0" mnemonicParsing="false" onAction="#mostrarPedidoEnviado" prefHeight="57.0" prefWidth="350" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Mostrar pedidos enviados">
+                <font>
+                    <Font name="Calibri" size="27.0" />
+                </font>
+            </Button>
+
+            <Button id="pedidoVolver" layoutX="246.0" layoutY="338.0" mnemonicParsing="false" onAction="#cambiarMenuPrincipal" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Volver">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Button>
+
+        </VBox>
+    </children>
+</AnchorPane>
