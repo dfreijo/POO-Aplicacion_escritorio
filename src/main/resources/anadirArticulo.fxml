@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFEACE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VistaAnadirArticulo">
+    <children>
+        <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="700.0" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <Label layoutX="214.0" layoutY="30.0" text="AÑADIR ARTÍCULO" textAlignment="CENTER">
+                <font>
+                    <Font name="Calibri" size="30.0" />
+                </font>
+            <padding>
+               <Insets bottom="20.0" />
+            </padding>
+            </Label>
+
+            <GridPane alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="180.0" />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="20" prefHeight="35" />
+                <RowConstraints minHeight="20" prefHeight="35" />
+                <RowConstraints minHeight="20" prefHeight="35" />
+                <RowConstraints minHeight="20" prefHeight="35" />
+                <RowConstraints minHeight="20" prefHeight="35" />
+            </rowConstraints>
+
+            <Label layoutX="73.0" layoutY="111.0" prefHeight="18.0" prefWidth="59.0" text="Código" GridPane.rowIndex="0">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="codigo" layoutX="285.0" layoutY="107.0" prefHeight="25.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label layoutX="72.0" layoutY="155.0" text="Descripción" GridPane.rowIndex="1">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="descripcion" layoutX="285.0" layoutY="150.0" prefHeight="25.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label layoutX="73.0" layoutY="203.0" text="Precio" GridPane.rowIndex="2">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="precio" layoutX="285.0" layoutY="198.0" prefHeight="25.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label layoutX="73.0" layoutY="247.0" text="Gastos de Envío" GridPane.rowIndex="3">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="gastosEnvio" layoutX="285.0" layoutY="242.0" prefHeight="25.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+
+            <Label layoutX="71.0" layoutY="291.0" text="Tiempo de Preparación" GridPane.rowIndex="4">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Label>
+            <TextField fx:id="tiempoPreparacion" layoutX="285.0" layoutY="286.0" prefHeight="25.0" prefWidth="377.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+            </GridPane>
+
+            <Button layoutX="156.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleAnadirArticulo" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Añadir">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            <VBox.margin>
+               <Insets top="20.0" />
+            </VBox.margin>
+            </Button>
+            <Button id="volver" layoutX="395.0" layoutY="331.0" mnemonicParsing="false" onAction="#cambiarMenuPrincipal" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Volver">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Button>
+
+        </VBox>
+    </children>
+</AnchorPane>

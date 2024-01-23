@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFEACE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VistaGestionPedido">
+   <children>
+      <VBox alignment="CENTER" prefHeight="500.0" prefWidth="700.0" spacing="30" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <Label layoutX="144.0" layoutY="36.0" text="GESTIÓN DE PEDIDOS">
+            <font>
+               <Font name="Calibri" size="40.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </Label>
+
+         <Button id="anadirPedido" layoutX="190.0" layoutY="107.0" mnemonicParsing="false" onAction="#cambiarAnadirPedido" prefHeight="57.0" prefWidth="220.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Añadir Pedido">
+            <font>
+               <Font name="Calibri" size="27.0" />
+            </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+         </Button>
+
+         <Button id="eliminarPedido" layoutX="190.0" layoutY="184.0" mnemonicParsing="false" onAction="#cambiarEliminarPedido" prefHeight="57.0" prefWidth="220.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Eliminar Pedido">
+            <font>
+               <Font name="Calibri" size="27.0" />
+            </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+         </Button>
+
+         <Button id="buscarPedido" layoutX="190.0" layoutY="261.0" mnemonicParsing="false" onAction="#cambiarListarPedido" prefHeight="57.0" prefWidth="220.0" style="-fx-background-color: #FFFFFF; -fx-border-radius: 5; -fx-border-color: #868686;" text="Buscar pedido">
+            <font>
+               <Font name="Calibri" size="27.0" />
+            </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+         </Button>
+
+         <Button id="pedidoVolver" layoutX="246.0" layoutY="338.0" mnemonicParsing="false" onAction="#cambiarMenuPrincipal" prefHeight="31.0" prefWidth="81.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Volver">
+            <font>
+               <Font name="Calibri" size="18.0" />
+            </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+         </Button>
+
+      </VBox>
+   </children>
+</AnchorPane>

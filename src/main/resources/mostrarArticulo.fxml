@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFEACE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VistaMostrarArticulo">
+   <children>
+      <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="700.0" spacing="20" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+         <Label alignment="CENTER" layoutX="115.0" layoutY="34.0" prefHeight="55.0" prefWidth="372.0" text="Mostrar Articulo" textAlignment="CENTER">
+         <font>
+            <Font name="Calibri" size="30.0" />
+         </font>
+            <VBox.margin>
+               <Insets bottom="20.0" />
+            </VBox.margin>
+         </Label>
+
+         <GridPane alignment="CENTER">
+
+         <columnConstraints>
+            <ColumnConstraints prefWidth="120.0" />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="20" prefHeight="35" />
+         </rowConstraints>
+
+         <Label layoutX="214.0" layoutY="140.0" text="Código Artículo" GridPane.rowIndex="0">
+            <font>
+               <Font name="Calibri" size="18.0" />
+            </font>
+         </Label>
+         <TextField fx:id="codigo" layoutX="164.0" layoutY="74.0" prefHeight="26.0" prefWidth="376.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+         </GridPane>
+
+         <TextArea fx:id="textArea" layoutX="48.0" layoutY="112.0" maxWidth="495.0" prefHeight="169.0" prefWidth="485.0">
+
+         </TextArea>
+
+         <Button layoutX="274.0" layoutY="318.0" mnemonicParsing="false" onAction="#mostrarArticuloCodigo" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Mostrar">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         </Button>
+
+         <Button layoutX="270.0" layoutY="270.0" mnemonicParsing="false" onAction="#cambiarMenuPrincipal" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Volver">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         </Button>
+
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #FFEACE;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VistaMostrarPedidoEnviados">
+    <children>
+        <VBox alignment="CENTER" layoutX="0.0" layoutY="0.0" prefHeight="500.0" prefWidth="700.0" spacing="10" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <Label layoutX="190.0" text="PEDIDOS ENVIADOS">
+                <font>
+                    <Font name="Calibri" size="30.0" />
+                </font>
+            <padding>
+               <Insets bottom="20.0" />
+            </padding>
+            </Label>
+            <ListView fx:id="listView" layoutX="31.0" layoutY="45.0" maxHeight="400.0" maxWidth="558.0" prefHeight="327.0" prefWidth="558.0" />
+
+            <GridPane alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints prefWidth="100.0" />
+                <ColumnConstraints prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="20" prefHeight="35" />
+            </rowConstraints>
+
+            <Button layoutX="200.0" layoutY="347.0" mnemonicParsing="false" onAction="#mostrarPedidosEnviados" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Mostrar" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Button>
+
+            <Button id="pedidoVolver" layoutX="312.0" layoutY="348.0" mnemonicParsing="false" onAction="#cambiarMenuPrincipal" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #868686; -fx-border-radius: 5;" text="Volver" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <font>
+                    <Font name="Calibri" size="18.0" />
+                </font>
+            </Button>
+            </GridPane>
+        </VBox>
+
+    </children>
+</AnchorPane>
